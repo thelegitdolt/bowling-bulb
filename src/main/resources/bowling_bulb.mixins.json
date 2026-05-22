@@ -4,14 +4,15 @@
   "compatibilityLevel": "JAVA_17",
   "refmap": "bowling_bulb.refmap.json",
   "mixins": [
-    "CookingPotBlockEntityMixin",
-    "CookingPotEmiRecipeMixin",
-    "CookingPotMenuMixin",
     "FeastBlockMixin",
     "MushroomCowMixin",
     "ServerGameModeMixin",
     "ShapelessRecipeSerializerMixin",
-    "SuspiciousStewRecipeMixin"
+    "SuspiciousStewRecipeMixin",
+    "cookingpotcontainer.CookingPotBlockEntityMixin",
+    "cookingpotcontainer.CookingPotEmiRecipeMixin",
+    "cookingpotcontainer.CookingPotMenuMixin",
+    "cookingpotcontainer.MonsterPotMenuMixin"
   ],
   "client": [
     "MultiplayerGameModeMixin"

@@ -1,7 +1,7 @@
 modLoader = "javafml"
 loaderVersion = "[32,)"
-issueTrackerURL = "https://github.com/thelegitdolt/dolt-mod-how/issues"
-license = "https://github.com/thelegitdolt/dolt-mod-how/issues"
+issueTrackerURL = "https://github.com/thelegitdolt/bowling-bulb/issues"
+license = "https://github.com/thelegitdolt/bowling-bulb/issues"
 
 [[mods]]
 modId = "bowling_bulb"
@@ -11,14 +11,7 @@ credits = "Dolt H. Haven"
 displayName = "Bowling Bulb"
 description = '''
         Bowling Bulb eats bowls. Download this mod to feed him more bowls
-    '''
-
-[[dependencies.bowling_bulb]]
-    modId = "blueprint"
-    mandatory = true
-    versionRange = "[7.1.0,)"
-    ordering = "AFTER"
-    side = "BOTH"
+'''
 
 [[dependencies.bowling_bulb]]
     modId = "emi"

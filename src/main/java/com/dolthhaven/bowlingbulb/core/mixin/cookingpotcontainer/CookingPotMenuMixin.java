@@ -1,4 +1,4 @@
-package com.dolthhaven.bowlingbulb.core.mixin;
+package com.dolthhaven.bowlingbulb.core.mixin.cookingpotcontainer;
 
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
@@ -12,8 +12,7 @@ import org.spongepowered.asm.mixin.injection.ModifyArgs;
 import org.spongepowered.asm.mixin.injection.invoke.arg.Args;
 import vectorwing.farmersdelight.common.block.entity.container.CookingPotMenu;
 
-@Pseudo
-@Mixin(value = CookingPotMenu.class, targets = "net.yirmiri.dungeonsdelight.common.block.monster_pot.MonsterPotMenu")
+@Mixin(CookingPotMenu.class)
 public class CookingPotMenuMixin {
     @ModifyArgs(method = "<init>(ILnet/minecraft/world/entity/player/Inventory;Lvectorwing/farmersdelight/common/block/entity/CookingPotBlockEntity;Lnet/minecraft/world/inventory/ContainerData;)V",
             at = @At(value = "INVOKE", target = "Lvectorwing/farmersdelight/common/block/entity/container/CookingPotResultSlot;<init>(Lnet/minecraft/world/entity/player/Player;Lvectorwing/farmersdelight/common/block/entity/CookingPotBlockEntity;Lnet/minecraftforge/items/IItemHandler;III)V"))

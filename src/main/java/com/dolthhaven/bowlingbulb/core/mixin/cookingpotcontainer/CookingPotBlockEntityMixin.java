@@ -1,4 +1,4 @@
-package com.dolthhaven.bowlingbulb.core.mixin;
+package com.dolthhaven.bowlingbulb.core.mixin.cookingpotcontainer;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
@@ -10,6 +10,7 @@ import vectorwing.farmersdelight.common.block.entity.CookingPotBlockEntity;
 
 import java.util.Arrays;
 import java.util.Map;
+
 
 @Pseudo
 @Mixin(value = CookingPotBlockEntity.class, targets = "net.yirmiri.dungeonsdelight.common.block.entity.MonsterPotBlockEntity")
