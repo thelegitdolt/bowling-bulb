@@ -8,7 +8,8 @@
     "CookingPotMenuMixin",
     "FeastBlockMixin",
     "ItemMixin",
-    "ServerGameModeMixin"
+    "ServerGameModeMixin",
+    "SuspiciousStewRecipeMixin"
   ],
   "client": [
     "MultiplayerGameModeMixin"
