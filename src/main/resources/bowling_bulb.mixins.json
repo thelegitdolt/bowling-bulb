@@ -8,6 +8,7 @@
     "CookingPotMenuMixin",
     "FeastBlockMixin",
     "ItemMixin",
+    "MushroomCowMixin",
     "ServerGameModeMixin",
     "SuspiciousStewRecipeMixin"
   ],
