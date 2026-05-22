@@ -7,9 +7,9 @@
     "CookingPotBlockEntityMixin",
     "CookingPotMenuMixin",
     "FeastBlockMixin",
-    "ItemMixin",
     "MushroomCowMixin",
     "ServerGameModeMixin",
+    "ShapelessRecipeSerializerMixin",
     "SuspiciousStewRecipeMixin"
   ],
   "client": [

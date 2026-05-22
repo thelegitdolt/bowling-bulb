@@ -2,17 +2,18 @@ package com.dolthhaven.bowlingbulb.core.mixin;
 
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
-import net.minecraft.world.Container;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.items.SlotItemHandler;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Pseudo;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArgs;
 import org.spongepowered.asm.mixin.injection.invoke.arg.Args;
 import vectorwing.farmersdelight.common.block.entity.container.CookingPotMenu;
 
-@Mixin(CookingPotMenu.class)
+@Pseudo
+@Mixin(value = CookingPotMenu.class, targets = "net.yirmiri.dungeonsdelight.common.block.monster_pot.MonsterPotMenu")
 public class CookingPotMenuMixin {
     @ModifyArgs(method = "<init>(ILnet/minecraft/world/entity/player/Inventory;Lvectorwing/farmersdelight/common/block/entity/CookingPotBlockEntity;Lnet/minecraft/world/inventory/ContainerData;)V",
             at = @At(value = "INVOKE", target = "Lvectorwing/farmersdelight/common/block/entity/container/CookingPotResultSlot;<init>(Lnet/minecraft/world/entity/player/Player;Lvectorwing/farmersdelight/common/block/entity/CookingPotBlockEntity;Lnet/minecraftforge/items/IItemHandler;III)V"))
