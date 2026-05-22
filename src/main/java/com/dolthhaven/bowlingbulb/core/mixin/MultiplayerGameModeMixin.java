@@ -26,16 +26,16 @@ public abstract class MultiplayerGameModeMixin {
 
     @Inject(method = "performUseItemOn", at = @At("HEAD"), cancellable = true)
     private void sex(LocalPlayer player, InteractionHand hand, BlockHitResult hitResult, CallbackInfoReturnable<InteractionResult> cir) {
-        if (hand == InteractionHand.MAIN_HAND && player.getItemInHand(hand).isEmpty()) {
-            ClientLevel level = this.minecraft.level;
-            BlockState state = level.getBlockState(hitResult.getBlockPos());
-            if (state.getBlock() instanceof FeastBlock) {
-                player.setItemInHand(hand, new ItemStack(Items.BOWL));
-                InteractionResult interactionResult = performUseItemOn(player, hand, hitResult);
-                if (ItemStack.isSameItemSameTags(player.getItemInHand(hand), new ItemStack(Items.BOWL)))
-                    player.setItemInHand(hand, ItemStack.EMPTY);
-                cir.setReturnValue(interactionResult);
-            }
-        }
+//        if (hand == InteractionHand.MAIN_HAND && player.getItemInHand(hand).isEmpty()) {
+//            ClientLevel level = this.minecraft.level;
+//            BlockState state = level.getBlockState(hitResult.getBlockPos());
+//            if (state.getBlock() instanceof FeastBlock) {
+//                player.setItemInHand(hand, new ItemStack(Items.BOWL));
+//                InteractionResult interactionResult = performUseItemOn(player, hand, hitResult);
+//                cir.setReturnValue(interactionResult);
+//                if (ItemStack.isSameItemSameTags(player.getItemInHand(hand), new ItemStack(Items.BOWL)))
+//                    player.setItemInHand(hand, ItemStack.EMPTY);
+//            }
+//        }
     }
 }
