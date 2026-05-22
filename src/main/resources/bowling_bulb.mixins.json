@@ -4,6 +4,9 @@
   "compatibilityLevel": "JAVA_17",
   "refmap": "bowling_bulb.refmap.json",
   "mixins": [
+    "CookingPotBlockEntityMixin",
+    "CookingPotMenuMixin",
+    "ItemMixin",
     "ServerGameModeMixin"
   ],
   "client": [

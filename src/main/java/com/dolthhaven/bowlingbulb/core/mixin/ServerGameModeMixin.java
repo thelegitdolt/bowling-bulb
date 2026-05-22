@@ -24,7 +24,7 @@ public abstract class ServerGameModeMixin {
     private void DoltModHow$sex(ServerPlayer player, Level level, ItemStack stack, InteractionHand hand, BlockHitResult result, CallbackInfoReturnable<InteractionResult> cir) {
         if (hand == InteractionHand.MAIN_HAND && player.getItemInHand(hand).isEmpty()) {
             BlockState state = level.getBlockState(result.getBlockPos());
-            if (state.getBlock() instanceof FeastBlock){
+            if (state.getBlock() instanceof FeastBlock) {
                 player.setItemInHand(hand, new ItemStack(Items.BOWL));
                 InteractionResult interactionResult = useItemOn(player, level, stack, hand, result);
                 if (ItemStack.isSameItemSameTags(player.getItemInHand(hand), new ItemStack(Items.BOWL)))

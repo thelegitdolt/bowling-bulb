@@ -29,10 +29,11 @@ public abstract class MultiplayerGameModeMixin {
         if (hand == InteractionHand.MAIN_HAND && player.getItemInHand(hand).isEmpty()) {
             ClientLevel level = this.minecraft.level;
             BlockState state = level.getBlockState(hitResult.getBlockPos());
-            if (state.getBlock() instanceof FeastBlock feastBlock) {
+            if (state.getBlock() instanceof FeastBlock) {
                 player.setItemInHand(hand, new ItemStack(Items.BOWL));
                 InteractionResult interactionResult = performUseItemOn(player, hand, hitResult);
-                if (player.isCreative()) player.setItemInHand(hand, ItemStack.EMPTY);
+                if (ItemStack.isSameItemSameTags(player.getItemInHand(hand), new ItemStack(Items.BOWL)))
+                    player.setItemInHand(hand, ItemStack.EMPTY);
                 cir.setReturnValue(interactionResult);
             }
         }
