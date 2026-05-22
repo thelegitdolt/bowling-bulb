@@ -5,6 +5,7 @@
   "refmap": "bowling_bulb.refmap.json",
   "mixins": [
     "CookingPotBlockEntityMixin",
+    "CookingPotEmiRecipeMixin",
     "CookingPotMenuMixin",
     "FeastBlockMixin",
     "MushroomCowMixin",
