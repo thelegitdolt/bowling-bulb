@@ -15,12 +15,14 @@ public class SuspiciousStewRecipeMixin {
     @WrapMethod(method = "matches(Lnet/minecraft/world/inventory/CraftingContainer;Lnet/minecraft/world/level/Level;)Z")
     private boolean sex(CraftingContainer pInv, Level pLevel, Operation<Boolean> original) {
         boolean red = false, brown = false, flower = false;
-        for(ItemStack stack : pInv.getItems()) {
+        for (ItemStack stack : pInv.getItems()) {
+            if (stack.isEmpty()) continue;
+
             if (stack.is(Items.RED_MUSHROOM) && !red) {
                 red = true;
-            } else if (stack.is(Items.BROWN_MUSHROOM) && !red) {
+            } else if (stack.is(Items.BROWN_MUSHROOM) && !brown) {
                 brown = true;
-            } else if (stack.is(ItemTags.SMALL_FLOWERS) && !red) {
+            } else if (stack.is(ItemTags.SMALL_FLOWERS) && !flower) {
                 flower = true;
             } else {
                 return false;
