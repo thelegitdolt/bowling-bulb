@@ -27,7 +27,7 @@ public class BowlingBulb {
     public void commonSetup(FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
             ForgeRegistries.ITEMS.getValues().forEach(item -> {
-                if (item.craftingRemainingItem == Items.BOWL) {
+                if (item.craftingRemainingItem == Items.BOWL || item.craftingRemainingItem == Items.GLASS_BOTTLE) {
                     item.craftingRemainingItem = Items.AIR;
                 }
             });

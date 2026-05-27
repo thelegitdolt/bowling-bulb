@@ -1,0 +1,9 @@
+{
+  "type": "nirvana:suspicious_crafting",
+  "category": "misc",
+  "result": "nirvana:herbal_salve",
+  "base": "minecraft:air",
+  "flowers": 2,
+  "weed": 2,
+  "durationFactor": 3
+}

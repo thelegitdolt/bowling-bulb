@@ -92,6 +92,7 @@ dependencies {
     runtimeOnly fg.deobf("mezz.jei:jei-${project.minecraft}-forge:${project.jei}")
 
     implementation fg.deobf("maven.modrinth:emi:${project.emi}")
+    implementation fg.deobf("maven.modrinth:nirvana-mod:${project.nirvana}")
     implementation fg.deobf("maven.modrinth:reliable-remover:${project.rr}")
     implementation fg.deobf("maven.modrinth:farmers-delight:${project.fd}")
     implementation fg.deobf("maven.modrinth:dungeons_delight:${project.dd}")

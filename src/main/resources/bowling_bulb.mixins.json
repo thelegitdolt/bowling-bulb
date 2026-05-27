@@ -13,7 +13,8 @@
     "cookingpotcontainer.CookingPotBlockEntityMixin",
     "cookingpotcontainer.CookingPotEmiRecipeMixin",
     "cookingpotcontainer.CookingPotMenuMixin",
-    "cookingpotcontainer.MonsterPotMenuMixin"
+    "cookingpotcontainer.MonsterPotMenuMixin",
+    "nirvana.NirvanaForgeJeiPluginMixin"
   ],
   "client": [
     "MultiplayerGameModeMixin"
