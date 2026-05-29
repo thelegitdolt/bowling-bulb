@@ -1,0 +1,35 @@
+{
+  "type": "farmersdelight:cooking",
+  "ingredients": [
+    {
+      "tag": "forge:crops/rice"
+    },
+    {
+      "tag": "forge:crops/onion"
+    },
+    {
+      "item": "minecraft:brown_mushroom"
+    },
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "tag": "forge:berries"
+    },
+    {
+      "item": "autumnity:large_pumpkin_slice"
+    }
+  ],
+  "result": {
+    "item": "farmersdelight:stuffed_pumpkin_block"
+  },
+  "experience": 2.0,
+  "cookingtime": 400,
+  "recipe_book_tab": "meals",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "autumnity"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:bread"
+    },
+    {
+      "tag": "forge:milk"
+    },
+    {
+      "item": "minecraft:baked_potato"
+    },
+    {
+      "item": "brewinandchewin:scarlet_cheese_wedge"
+    },
+    {
+      "item": "farmersdelight:smoked_ham"
+    },
+    {
+      "item": "brewinandchewin:scarlet_cheese_wedge"
+    },
+    {
+      "item": "minecraft:red_mushroom"
+    },
+    {
+      "item": "minecraft:cauldron"
+    },
+    {
+      "item": "farmersdelight:tomato_sauce"
+    }
+  ],
+  "result": {
+    "item": "brewinandchewin:fiery_fondue_pot"
+  }
+}

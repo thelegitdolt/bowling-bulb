@@ -1,0 +1,29 @@
+{
+  "type": "dungeonsdelight:monster_cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "minecraft:poisonous_potato"
+    },
+    {
+      "item": "minecraft:poisonous_potato"
+    },
+    {
+      "tag": "forge:milk"
+    },
+    {
+      "tag": "dungeonsdelight:sculk_cheese"
+    },
+    {
+      "tag": "dungeonsdelight:sculk_cheese"
+    },
+    {
+      "item": "minecraft:flower_pot"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "dungeonsdelight:au_rotten_potatoes"
+  }
+}
