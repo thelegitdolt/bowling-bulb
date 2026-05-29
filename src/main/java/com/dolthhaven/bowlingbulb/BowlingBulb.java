@@ -38,6 +38,6 @@ public class BowlingBulb {
             DoltUtils.getPotentialItem("dungeonsdelight", "monster_pot").ifPresent(pot -> {
                 pot.maxStackSize = 64;
             });
-        });3
+        });
     }
 }
