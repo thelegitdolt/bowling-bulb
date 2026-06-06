@@ -9,6 +9,7 @@
     "ServerGameModeMixin",
     "ShapelessRecipeSerializerMixin",
     "SoupItemMixin",
+    "SuspiciousStewItemMixin",
     "SuspiciousStewRecipeMixin",
     "cookingpotcontainer.CookingPotBlockEntityMixin",
     "cookingpotcontainer.CookingPotEmiRecipeMixin",
